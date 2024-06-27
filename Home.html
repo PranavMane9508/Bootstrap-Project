@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="aos-master/dist/aos.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/png" href="Images/icons8-plane-30.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <title>Home</title>
+</head>
+<body>
+    <!-- Logo -->
+    <div class="d-flex justify-content-center bg-dark border-bottom border-secondary logo">
+        <a href="Home.html" style="color: white;">
+            <img src="Images/Logo.png" alt="logo" data-aos="zoom-in" data-aos-duration="1000">
+        </a>
+    </div>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#mymenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mymenu">
+            <ul class="navbar-nav mx-auto" data-aos="zoom-in" data-aos-duration="1000">
+                <li class="nav-item"><a href="Home.html" class="nav-link  disabled ml-3">Home</a></li>
+                <li class="nav-item dropend bg-dark">
+                    <a class="nav-link dropdown-toggle" href="#SomePlans" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Plans
+                    </a>
+                    <ul class="dropdown-menu bg-dark">
+                      <li><a class="dropdown-item" href="#SomePlans">Popular Plans</a></li>
+                      <li><a class="dropdown-item" href="allplans.html">All Plans</a></li>
+                    </ul>
+                  </li>
+                <li class="nav-item"><a href="#aboutus" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="contactus.html" class="nav-link">Contact us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="myCarousels" class="carousel slide carousel-fade" data-bs-ride="carousel" data-aos="zoom-in">
+        <!-- <ol class="carousel-indicators">
+            <li data-target="#myCarousels" data-slide-to="0" class="active" aria-current="true"></li>
+            <li data-target="#myCarousels" data-slide-to="1" aria-label="Second slide"></li>
+            <li data-target="#myCarousels" data-slide-to="2" aria-label="Third slide"></li>
+            <li data-target="#myCarousels" data-slide-to="3" aria-label="fourth slide"></li>
+        </ol> -->
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active" data-bs-interval="4000">
+                <img src="Images/HomePage/1.jpeg" class="img-fluid" width="100%" height="550" alt="First slide" />
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+                <img src="Images/HomePage/2.jpeg" class="img-fluid" width="100%" height="550" alt="Second slide" />
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+                <img src="Images/HomePage/3.jpeg" class="img-fluid" width="100%" height="550" alt="Third slide" />
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+                <img src="Images/HomePage/4.jpeg" class="img-fluid" width="100%" height="550" alt="fourth slide" />
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousels" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousels" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+
+    <!-- Popular Plans -->
+    <div class="SomePlans container-fluid mb-5" id="SomePlans">
+        <p class="text-center sec-title mt-5 sec-title mb-4" data-aos="zoom-in" data-aos-duration="2000">
+            Some Popular Plans
+        </p>
+        <div class="row arow mt-3">
+            <div class="col-xl-4 col-lg-12 plancard p-1" data-aos="fade-up" data-aos-duration="2000">
+                <div class="flip-card text-capitalize m-3">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="Images/HomePage/1.jpeg" alt="Plan" style="width:100%;height: auto;"><!-- image -->
+                        <p class="palnheading text-center mt-5">Kerala<br><span class="h-6">6 nights 7 days</span></p><!-- Plan Name -->
+                      </div>
+                      <div class="flip-card-back">
+                        <p class="palnheading text-center">Kerala<br><span class="h-6">6 nights 7 days</span></p><br><!-- Plan Name -->
+                        <p class="stayinfo text-center"><i class="fas fa-bed"></i> 2 Kochin, 2 Munnar, 1 Kumli, 1 Alleppey</p><br><!-- stay info -->
+                        <p class="planinfo text-center">Kaladi - Art Gallery - Boating in the back water in famous 
+                            Vembanad at Alleppey - Beach Kumli - Spices Famous Spice Plantation, Tekadi Wildlife Sanctuary - Munnar 
+                            - Tea Garden - Anamudi Hill - Mettapatti Dam.</p><br><!-- what to watch -->
+                        <div class="infop1">
+                            <div class="info1">
+                                <div class="imgpart"><i class="fas fa-bus"></i></div> 
+                                <div class="infopart">AC luxury coache</div>
+                            </div>
+                            <div class="info2">
+                                <div class="imgpart"><i class="fas fa-train"></i></div> 
+                                <div class="infopart">miraj/ratnagiri-kochin<br>kochin-ratnagiri/miraj</div>
+                            </div>
+                        </div><br>
+                        <div class="infop2">
+                            <div class="info3">
+                                <div class="imgpart"><i class="fas fa-plane"></i></div> 
+                                <div class="infopart">pune/benglore-kochin<br>kochin-benglore/pune</div>
+                            </div>
+                            <div class="info4">
+                                <div class="imgpart"><i class="fas fa-hotel"></i></div> 
+                                <div class="infopart">all a-grade AC hotels</div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-xl-4 col-lg-12 plancard p-1" data-aos="fade-up" data-aos-duration="2000">
+                <div class="flip-card text-capitalize m-3">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="Images/HomePage/2.jpeg" alt="Plan" style="width:100%;height: auto;"><!-- image -->
+                        <p class="palnheading text-center mt-5">Sri Lanka<br><span class="h-6">7 nights 8 days</span></p><!-- Plan Name -->
+                      </div>
+                      <div class="flip-card-back">
+                        <p class="palnheading text-center">Sri Lanka<br><span class="h-6">6 nights 7 days</span></p><br><!-- Plan Name -->
+                        <p class="stayinfo text-center"><i class="fas fa-bed"></i> Sri Lanka</p><br><!-- stay info -->
+                        <p class="planinfo text-center">Sri Lanka - Pinawala Elephant Orphanage, Kandy City, 
+                            Cultural Show, Temple of Tooth, Perideniya, Nuaraelia, Tea Gardens, Ramboda, 
+                            Gayatri Pitham, Sita Amman Temple, Bentota, Colombo City Dur,Maldives - panoramic 
+                            view of this tiny country, beautiful beaches,</p><br><!-- what to watch -->
+                        <div class="infop1">
+                            <div class="info1">
+                                <div class="imgpart"><i class="fas fa-bus"></i></div> 
+                                <div class="infopart">AC luxury coache</div>
+                            </div>
+                            <!-- <div class="info2">
+                                <div class="imgpart"><i class="fas fa-train"></i></div> 
+                                <div class="infopart">miraj/ratnagiri-kochin<br>kochin-ratnagiri/miraj</div>
+                            </div> -->
+                        </div><br>
+                        <div class="infop2">
+                            <div class="info3">
+                                <div class="imgpart"><i class="fas fa-plane"></i></div> 
+                                <div class="infopart">pune/mumbai-colombo<br>colombo-mumbai/pune</div>
+                            </div>
+                            <div class="info4">
+                                <div class="imgpart"><i class="fas fa-hotel"></i></div> 
+                                <div class="infopart">all a-grade AC hotels</div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-xl-4 col-lg-12 plancard p-1" data-aos="fade-up" data-aos-duration="2000">
+                <div class="flip-card text-capitalize m-3">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="Images/HomePage/3.jpeg" alt="Plan" style="width:100%;height: auto;"><!-- image -->
+                        <p class="palnheading text-center mt-5">Kashmir Gulmarg Pahalgam<br><span class="h-6">6 nights 7 days</span></p><!-- Plan Name -->
+                      </div>
+                      <div class="flip-card-back">
+                        <p class="palnheading text-center">Kashmir Gulmarg Pahalgam<br><span class="h-6">6 nights 7 days</span></p><br><!-- Plan Name -->
+                        <p class="stayinfo text-center"><i class="fas fa-bed"></i> 4 Srinagar (2 hotels, 2 in houseboat) 2 Pehalgam</p><br><!-- stay info -->
+                        <p class="planinfo text-center">Srinagar - Dal Lake Hazratbal Darga Shalimar Nishat - 
+                            Chashmeshahi Mughal Gardens Gulmarg Gondola Ropeway - Sonmarg - Avantipur - Pampur - 
+                            Pehalgam</p><br><!-- what to watch -->
+                        <div class="infop1">
+                            <div class="info1">
+                                <div class="imgpart"><i class="fas fa-bus"></i></div> 
+                                <div class="infopart">AC luxury coache</div>
+                            </div>
+                            <!-- <div class="info2">
+                                <div class="imgpart"><i class="fas fa-train"></i></div> 
+                                <div class="infopart">miraj/ratnagiri-kochin<br>kochin-ratnagiri/miraj</div>
+                            </div> -->
+                        </div><br>
+                        <div class="infop2">
+                            <div class="info3">
+                                <div class="imgpart"><i class="fas fa-plane"></i></div> 
+                                <div class="infopart">pune-shrinagar<br>shrinagar/pune</div>
+                            </div>
+                            <div class="info4">
+                                <div class="imgpart"><i class="fas fa-hotel"></i></div> 
+                                <div class="infopart">all a-grade AC hotels</div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-xl-4 col-lg-12 plancard p-1" data-aos="fade-up" data-aos-duration="2000">
+                <div class="flip-card text-capitalize m-3">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="Images/HomePage/4.jpeg" alt="Plan" style="width:100%;height: auto;"><!-- image -->
+                        <p class="palnheading text-center mt-5">Pokhara Nepal Chitwan<br><span class="h-6">7 nights 8 days</span></p><!-- Plan Name -->
+                      </div>
+                      <div class="flip-card-back">
+                        <p class="palnheading text-center">Pokhara Nepal Chitwan<br><span class="h-6">7 nights 8 days</span></p><br><!-- Plan Name -->
+                        <p class="stayinfo text-center"><i class="fas fa-bed"></i> 4 Kathmandu, 2 Pokhara, 1 Chitwan</p><br><!-- stay info -->
+                        <p class="planinfo text-center">Kathmandu Pashupatinath Temple-Buddhist Stupa-Pokhara Phewa 
+                            Lake Davis Fall-Vindhyavasini Temple Manokamna Devi Rope Way-Chitwan Wildlife Sanctuary</p><br><!-- what to watch -->
+                        <div class="infop1">
+                            <div class="info1">
+                                <div class="imgpart"><i class="fas fa-bus"></i></div> 
+                                <div class="infopart">AC luxury coache</div>
+                            </div>
+                            <!-- <div class="info2">
+                                <div class="imgpart"><i class="fas fa-train"></i></div> 
+                                <div class="infopart">miraj/ratnagiri-kochin<br>kochin-ratnagiri/miraj</div>
+                            </div> -->
+                        </div><br>
+                        <div class="infop2">
+                            <div class="info3">
+                                <div class="imgpart"><i class="fas fa-plane"></i></div> 
+                                <div class="infopart">pune/mumbai-<br>Kathmandu-pune</div>
+                            </div>
+                            <div class="info4">
+                                <div class="imgpart"><i class="fas fa-hotel"></i></div> 
+                                <div class="infopart">all a-grade AC hotels</div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-xl-4 col-lg-12 plancard p-1" data-aos="fade-up" data-aos-duration="2000">
+                <div class="flip-card text-capitalize m-3">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="Images/HomePage/5.jpeg" alt="Plan" style="width:100%;height: auto;"><!-- image -->
+                        <p class="palnheading text-center mt-5">Bangkok Pattaya Thailand<br><span class="h-6">4 nights 5 days</span></p><!-- Plan Name -->
+                      </div>
+                      <div class="flip-card-back">
+                        <p class="palnheading text-center">Bangkok Pattaya Thailand<br><span class="h-6">4 nights 5 days</span></p><br><!-- Plan Name -->
+                        <p class="stayinfo text-center"><i class="fas fa-bed"></i> 2 Pattaya, 2 Bangkok</p><br><!-- stay info -->
+                        <p class="planinfo text-center">Alcazar Show - Coral Island Tour Nangnooch Village - 
+                            Bangkok City Tour - Gem Factory - Safari World</p><br><!-- what to watch -->
+                        <div class="infop1">
+                            <div class="info1">
+                                <div class="imgpart"><i class="fas fa-bus"></i></div> 
+                                <div class="infopart">AC luxury coache</div>
+                            </div>
+                            <!-- <div class="info2">
+                                <div class="imgpart"><i class="fas fa-train"></i></div> 
+                                <div class="infopart">miraj/ratnagiri-kochin<br>kochin-ratnagiri/miraj</div>
+                            </div> -->
+                        </div><br>
+                        <div class="infop2">
+                            <div class="info3">
+                                <div class="imgpart"><i class="fas fa-plane"></i></div> 
+                                <div class="infopart">mumbai-bangkok-mumbai</div>
+                            </div>
+                            <div class="info4">
+                                <div class="imgpart"><i class="fas fa-hotel"></i></div> 
+                                <div class="infopart">all a-grade AC hotels</div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-xl-4 col-lg-12 plancard p-1" data-aos="fade-up" data-aos-duration="2000">
+                <div class="flip-card text-capitalize m-3">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="Images/HomePage/6.jpg" alt="Plan" style="width:100%;height: auto;"><!-- image -->
+                        <p class="palnheading text-center mt-5">Darjeeling Gangrok Kolkata<br><span class="h-6">9 nights 10 days</span></p><!-- Plan Name -->
+                      </div>
+                      <div class="flip-card-back">
+                        <p class="palnheading text-center">Darjeeling Gangrok Kolkata<br><span class="h-6">9 nights 10 days</span></p><br><!-- Plan Name -->
+                        <p class="stayinfo text-center"><i class="fas fa-bed"></i> 2 Calcutta, 2 Siligud 3 Gangtok, 2 Darjeeling</p><br><!-- stay info -->
+                        <p class="planinfo text-center">Calcutta Darshan-Howrah Grease-Belur Math-Dakshineshwar Manditavani 
+                            Shitty Victoria Memorial- Gangtok - Chhangu Lake Buddhist Bhogeries - Hanuman Hok - Ganesh Tok - 
+                            Tashi View Point Darjeeling Hi Gardenhagar Hill Batasia Loop - Himalayan Zoo - Mountaineering Innitt 
+                            Shik Chirik Lake</p><br><!-- what to watch -->
+                        <div class="infop1">
+                            <div class="info1">
+                                <div class="imgpart"><i class="fas fa-bus"></i></div> 
+                                <div class="infopart">AC luxury coache</div>
+                            </div>
+                            <div class="info2">
+                                <div class="imgpart"><i class="fas fa-train"></i></div> 
+                                <div class="infopart">miraj/ratnagiri-kochin<br>kochin-ratnagiri/miraj</div>
+                            </div>
+                        </div><br>
+                        <div class="infop2">
+                            <div class="info3">
+                                <div class="imgpart"><i class="fas fa-plane"></i></div> 
+                                <div class="infopart">pune/benglore-kochin<br>kochin-benglore/pune</div>
+                            </div>
+                            <div class="info4">
+                                <div class="imgpart"><i class="fas fa-hotel"></i></div> 
+                                <div class="infopart">all a-grade AC hotels</div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <p class="text-center sec-title mt-5 sec-title" data-aos="zoom-in" data-aos-duration="2000">
+            <a class="allplanslink" href="allplans.html">Here are our all plans</a>
+        </p>
+    </div>
+
+    <!-- About Us -->
+    <div id="aboutus" class="container-fluid bg-image pt-1">
+        <p class="text-center sec-title mt-5 sec-title mb-4" data-aos="zoom-in" data-aos-duration="2000">
+            About Us
+        </p>
+        <div class="row overflow-hidden mb-4">
+            <div class="col-sm-32 col-md-6 col-lg-6" data-aos="fade-up" data-aos-duration="3000">
+                <img src="Images/AboutUs/aboutus.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="col-sm-32 col-md-6 col-lg-6 align-items-center" data-aos="fade-down" data-aos-duration="3000">
+                <p class="text-justify infous pr-5 pt-3 font-weight-normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    We understand that nowadays, travelling has become much more than just visiting a new destination. 
+                    That is why each of our vacation packages offers you the respite that you anticipate from a holiday. 
+                    As a well-informed traveller, it is only right to expect more from your travel company in India - we 
+                    strive to ensure the same for our customers. It is no longer about only conveyance and accommodation. 
+                    For those who enjoy travelling, the best travel packages are those which can offer them holistic holiday 
+                    experiences. We have all the travel services under one roof. In our constant endeavour to be the best 
+                    travel company in India, everything that we do is based on creating and setting new benchmarks. With 
+                    extensive travel know-how, end-to-end travel planning and a wide assortment of travel packages, we are 
+                    counted among the best travel agents in India that ensure the best holiday experiences.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid d-flex flex-column bg-dark text-light align-items-center mt-5 p-3" id="footer">
+        <p class="lead">Follow us on Social Media</p>
+        <div class="social-media">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+            <a href="#" class="fab fa-youtube"></a>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="aos-master/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>

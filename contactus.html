@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="aos-master/dist/aos.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/png" href="Images/icons8-plane-30.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Logo -->
+    <div class="d-flex justify-content-center bg-dark border-bottom border-secondary  logo">
+        <a href="Home.html" style="color: white;">
+            <img src="Images/Logo.png" alt="logo" data-aos="zoom-in" data-aos-duration="1000">
+        </a>
+    </div>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#mymenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mymenu">
+            <ul class="navbar-nav mx-auto" data-aos="zoom-in" data-aos-duration="1000">
+                <li class="nav-item"><a href="Home.html" class="nav-link ml-3">Home</a></li>
+                <li class="nav-item dropend bg-dark">
+                    <a class="nav-link dropdown-toggle" href="Home.html#SomePlans" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Plans
+                    </a>
+                    <ul class="dropdown-menu bg-dark">
+                        <li><a class="dropdown-item" href="Home.html#SomePlans">Popular Plans</a></li>
+                        <li><a class="dropdown-item" href="allplans.html">All Plans</a></li>
+                    </ul>
+                  </li>
+                <li class="nav-item"><a href="Home.html#aboutus" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="contactus.html" class="nav-link disabled">Contact us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Map -->
+    <div class="mapcontainer container-fluid p-3 d-flex justify-content-center bg-light">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122297.20591920793!2d74.2223884079516!3d16.687504635681368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc1000cdec07a29%3A0xece8ea642952e42f!2sKolhapur%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1702624248348!5m2!1sen!2sin" 
+        width="90%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <section id="contact-details" class="mt-5 mr-5 ml-5 row">
+        <div class="container-fluid p-5 col-sm-12 col-md-6 col-xl-6" data-aos="fade-up" data-aos-duration="2000">
+            <h2>Contact Information</h2>
+            <br>
+            <p class="lead">For those who enjoy travelling, the best travel packages are those which can offer them holistic holiday experiences.</p>
+            <br>
+            <p class="lead"><img src="Images/AboutUs/icons8-location-20.png" alt="location"> &nbsp;&nbsp;Kolhapur, Maharashtra 416007</p>
+            <p class="lead"><img src="Images/AboutUs/icons8-phone-20.png" alt="phone"> &nbsp;&nbsp;(+91) 9403824100</p>
+            <p class="lead"><img src="Images/AboutUs/icons8-email-20.png" alt="email"> &nbsp;&nbsp;contact@holidays.com</p>
+        </div>
+        <div class="container-fluid p-5 col-sm-12 col-md-6 col-xl-6" data-aos="fade-up" data-aos-duration="2000">
+            <h2>Send a Message</h2>
+            <div class="form-group p-4">
+                <div>
+                    <input type="text" name="name" placeholder="Enter Name" class="form-control m-2" required>
+                    <input type="tel" name="telno" id="telno" placeholder="Enter Phone Number" class="form-control m-2">
+                </div>
+                <div>
+                    <input type="email" name="email" id="email" placeholder="Enter Email" class="form-control m-2" required>
+                </div>
+                <div>
+                    <textarea name="address" id="address" cols="30" rows="5" placeholder="Enter Message" class="form-control m-2"></textarea>
+                </div>
+                <button type="submit" class="btn btn-outline-primary m-2">Submit</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container-fluid d-flex flex-column bg-dark text-light align-items-center mt-5 p-3" id="footer">
+        <p class="lead">Follow us on Social Media</p>
+         <div class="social-media">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="aos-master/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
+</body>
+</html>
